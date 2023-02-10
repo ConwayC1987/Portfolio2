@@ -1,0 +1,37 @@
+/*body{
+    background-image: url("/assets/images/guinness_pints.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    width: 100%;
+    height:auto;
+  }
+  */
+  * {
+    box-sizing: border-box;
+  }
+  
+  .questions_box {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .option-left {
+    background-color: #0f1cc68d;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .option-right {
+    background-color: #0f1cc68d;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .questions_box {
+      flex-direction: column;
+    }
+  }
