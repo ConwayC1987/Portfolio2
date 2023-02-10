@@ -29,6 +29,13 @@
     flex: 50%;
   }
   
+  .answer_option {
+    background-color: #0f1cc68d;
+    padding: 10px;
+    flex: 100%;  
+    font-size: 30px;
+    text-align: center;
+  
   /* Responsive layout - makes a one column-layout instead of two-column layout */
   @media (max-width: 800px) {
     .questions_box {
