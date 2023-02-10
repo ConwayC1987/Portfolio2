@@ -13,20 +13,18 @@
 <body>
     <header>
         <h1>The Pub Quiz</h1>
-        <h2>In this game the first person at a table to complete the quiz with the top score recieves a 
-            free drink.</h2>
-            <button onclick="playGame()">Try it</button>
     </header>
-    <nav>
-        <h1>Show/Hide Div on Button Click using JavaScript.</h1>
-        <input type="button" value="Show/Hide" onClick="showHideDiv('divMsg')"/><br><br>
-        <div id="divMsg" style="display:none">
+    <main>
+        <h2>In this game the first person at a table to complete the quiz with the top score recieves a
+            free drink.</h2>
+        <input type="button" value="Play Game" onClick="showHideDiv('divMsg')">
+        <div id="divMsg">
             <div id="showGame">
                 <div class="questions_box">
                     <div class="option-left">1</div>
                     <div class="option-right">2</div>
                 </div>
-                <div class="question">Which of these famous people are older?</div>
+                <div class="question">Who is older?</div>
                 <div class="answer_options">
                     <button data-type="option1" class="btn btn--big btn--green">Option1</button>
                     <button data-type="option2" class="btn btn--big btn--green">Option2</button>
@@ -34,10 +32,6 @@
                 </div>
             </div>
         </div>
-
-    </nav>
-    <main>
-        
         <section>
             <img src="assets/images/guinness_pints.jpg" alt="People holding up five pints of Guinness">
         </section>

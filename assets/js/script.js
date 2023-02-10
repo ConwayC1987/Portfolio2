@@ -1,3 +1,4 @@
+// Code from https://www.includehelp.com/code-snippets/show-hide-div-on-button-click-using-javascript.aspx//
 function showHideDiv(ele) {
     var srcElement = document.getElementById(ele);
     if (srcElement != null) {
@@ -9,4 +10,8 @@ function showHideDiv(ele) {
         }
         return false;
     }
+}
+var images = {
+    "tomHanks"  : "tom_hanks.jpg",
+    "liamNeeson" : "liam_Neeson.jpg"
 }
