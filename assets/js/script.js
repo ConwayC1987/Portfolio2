@@ -1,6 +1,8 @@
 // Code from https://www.includehelp.com/code-snippets/show-hide-div-on-button-click-using-javascript.aspx//
 function showHideDiv(ele) {
     var srcElement = document.getElementById(ele);
+    document.getElementById("hideMsg").style.display="none";
+    document.getElementById("hideMsg1").style.display="none";
     if (srcElement != null) {
         if (srcElement.style.display == "block") {
             srcElement.style.display = 'none';
@@ -11,6 +13,11 @@ function showHideDiv(ele) {
         return false;
     }
 }
+function gameRules() {
+    document.getElementById("demo").innerHTML = "1st person at the table with all question correct gets a free drink";
+    document.getElementById("demo1").innerHTML = "No use of the internet";
+    document.getElementById("demo2").innerHTML = "No looking at others answers";
+  }
 /*------------------------------------*/
 var start = function(){
 	
