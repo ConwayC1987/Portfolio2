@@ -3,6 +3,7 @@ function showHideDiv(ele) {
     var srcElement = document.getElementById(ele);
     document.getElementById("hideMsg").style.display="none";
     document.getElementById("hideMsg1").style.display="none";
+    document.getElementById("showGame").style.display="none";
     if (srcElement != null) {
         if (srcElement.style.display == "block") {
             srcElement.style.display = 'none';
@@ -17,11 +18,12 @@ function gameRules() {
     document.getElementById("demo").innerHTML = "1st person at the table with all question correct gets a free drink";
     document.getElementById("demo1").innerHTML = "No use of the internet";
     document.getElementById("demo2").innerHTML = "No looking at others answers";
+    document.getElementById("playButton").style.display="block";
   }
 /*------------------------------------*/
-var start = function(){
-	
-}
+function startGame() {
+    document.getElementById("showGame").style.display="block";
+  }
 /*------------------------------------*/
 var correct = 0;
 var incorrect = 0;

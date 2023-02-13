@@ -75,3 +75,16 @@ img {
   padding: 2px 16px;
 }
 
+body{
+  text-align: center;
+  background-color: #55aad48d;
+  position: relative;
+  border: 3px solid green;
+}
+
+#showGame {
+  display: none;
+}
+#playButton {
+  display: none;
+}
