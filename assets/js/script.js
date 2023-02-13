@@ -29,22 +29,22 @@ var question = "none";
 var input = "none";
 var answer = "none";
 /*------------------------------------*/
-var imgArray = new Array();
 
-imgArray[0] = new Image();
-imgArray[0].src = 'assets/images';
 
-imgArray[1] = new Image();
-imgArray[1].src = 'images/img/Splash_image2.jpg';
-
-/* ... more images ... */
-
-imgArray[5] = new Image();
-imgArray[5].src = 'images/img/Splash_image6.jpg';
 
 /*------------------------------------*/
 
-function nextImage(element)
+
+function myQuestions() {
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "assets/images/liam_Neeson.jpg");
+    x.setAttribute("width", "304");
+    x.setAttribute("height", "228");
+    x.setAttribute("alt", "The Pulpit Rock");
+    document.body.appendChild(x);
+  }
+
+  function nextQuestion(element)
 {
     var img = document.getElementById(element);
 
@@ -61,11 +61,3 @@ function nextImage(element)
         }
     }
 }
-function myFunction() {
-    var x = document.createElement("IMG");
-    x.setAttribute("src", "assets/images/liam_Neeson.jpg");
-    x.setAttribute("width", "304");
-    x.setAttribute("height", "228");
-    x.setAttribute("alt", "The Pulpit Rock");
-    document.body.appendChild(x);
-  }

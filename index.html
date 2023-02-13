@@ -19,30 +19,46 @@
     </header>
     <main>
         <div id="hideMsg1">
-        <input type="button" value="Welcome to The Pub Quiz" onClick="showHideDiv('hideRules'), showHideDiv('divMsg')">
-    </div>
+            <input type="button" value="Welcome to The Pub Quiz"
+                onClick="showHideDiv('hideRules'), showHideDiv('divMsg')">
+        </div>
         <div id="divMsg">
             <button onclick="gameRules()">Rule are...</button>
             <p id="demo"></p>
             <p id="demo1"></p>
             <p id="demo2"></p>
+        </div>
             
             <div id="showGame">
-                <button onclick="myFunction()">Try it</button>
+                <button onclick="myQuestions()">Try it</button>
                 <div class="questions_box">
-                    <div class="option-left">1</div>
-                    <div class="option-right">2</div>
+                    <div class="option-left">
+                        <div class="card_left">
+                            <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                            <div class="container">
+                                <div class="answer_options">
+                                    <button data-type="option2">Option1</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="option-right">
+                            <div class="card">
+                                <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                                <div class="container">
+                                    <div class="answer_options">
+                                        <button data-type="option2">Option1</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="question">Who is older?</div>
-                <div class="answer_options">
-                    <button data-type="option1" class="btn btn--big btn--green">Option1</button>
-                    <button data-type="option2" class="btn btn--big btn--green">Option2</button>
-                    <button data-type="same" class="btn btn--big btn--green">Same</button>
-                </div>
-            </div>
-        </div>
-        <section>
             
+        <section>
+            <div class="question">#</div>
+                            <div class="answer_options"></div>
         </section>
     </main>
     <footer>
