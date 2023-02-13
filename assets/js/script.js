@@ -23,13 +23,13 @@ function gameRules() {
 /*------------------------------------*/
 function startGame() {
     document.getElementById("showGame").style.display="block";
+    document.getElementById("divMsg").style.display="none";
+    document.getElementById("imgOption").style.display="block";
+    document.getElementById("divMsg").style.display="none";
+    renderQuestion();
   }
 /*------------------------------------*/
-var correct = 0;
-var incorrect = 0;
-var question = "none";
-var input = "none";
-var answer = "none";
+
 /*------------------------------------*/
 
 
@@ -45,21 +45,3 @@ function myQuestions() {
     x.setAttribute("alt", "The Pulpit Rock");
     document.body.appendChild(x);
   }
-
-  function nextQuestion(element)
-{
-    var img = document.getElementById(element);
-
-    for(var i = 0; i < imgArray.length;i++)
-    {
-        if(imgArray[i].src == img.src) // << check this
-        {
-            if(i === imgArray.length){
-                document.getElementById(element).src = imgArray[0].src;
-                break;
-            }
-            document.getElementById(element).src = imgArray[i+1].src;
-            break;
-        }
-    }
-}
