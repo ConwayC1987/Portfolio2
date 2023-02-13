@@ -39,6 +39,32 @@ let imgSylvs = 76;
 let imgLeoV = 44;
 let imgMaryL = 53;
 /*------------------------------------*/
+const question = document.getElementById("question");
+const qImg = document.getElementById("qImg");
+const qImg1 = document.getElementById("qImg1");
+const option1 = document.getElementById("option1");
+const option2  = document.getElementById("option2");
+let questions = [
+    {
+        question : "Who is the oldest?",
+        imgSrc : "img/html.png",
+        option1 : "Correct",
+        option2 : "Wrong",
+        correct : "option1"
+    },{
+        question : "Who is the oldest?",
+        imgSrc : "img/html.png",
+        option1 : "Correct",
+        option2 : "Wrong",
+        correct : "option1"
+    },{
+        question : "Who is the oldest?",
+        imgSrc : "img/html.png",
+        option1 : "Correct",
+        option2 : "Wrong",
+        correct : "option1"
+    }
+];
 
 
 
