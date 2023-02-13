@@ -26,10 +26,18 @@ function startGame() {
     document.getElementById("divMsg").style.display="none";
     document.getElementById("imgOption").style.display="block";
     document.getElementById("divMsg").style.display="none";
-    renderQuestion();
   }
 /*------------------------------------*/
-
+let imgTomH = 66;
+let imgLiamN = 70;
+let imgSimonC = 63;
+let imgPamA = 55;
+let imgKateW = 47;
+let imgLeoD = 48;
+let imgArnieS = 75;
+let imgSylvs = 76;
+let imgLeoV = 44;
+let imgMaryL = 53;
 /*------------------------------------*/
 
 
