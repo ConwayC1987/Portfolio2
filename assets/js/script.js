@@ -36,8 +36,9 @@ let imgMaryL = 53;
 let question = document.getElementById("question");
 let qImg = document.getElementById("qImg");
 let qImg1 = document.getElementById("qImg1");
-let option1 = document.getElementById("option1");
 let option2  = document.getElementById("option2");
+let option1 = document.getElementById("option1");
+
 let questions = [
     {
         question : "Who is the oldest?",
@@ -70,7 +71,7 @@ function makeQuestion(){
     qImg.innerHTML = "<img src="+ ques.imgSrc +">";
     qImg1.innerHTML = "<img src="+ ques.imgSrc1 +">";
     option1.innerHTML = ques.option1;
-    option1.innerHTML = ques.option2;
+    option2.innerHTML = ques.option2;
 }
 
 
