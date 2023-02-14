@@ -42,7 +42,7 @@ let questions = [
     {
         question : "Who is the oldest?",
         imgSrc : "assets/images/tom_hanks.jpg",
-        imgSrc : "assets/images/liam_Neeson.jpg",
+        imgSrc1 : "assets/images/liam_Neeson.jpg",
         option1 : "Tom Hanks",
         option2 : "Liam Neeson",
         correct : "option2"
@@ -68,6 +68,7 @@ function makeQuestion(){
     let ques = questions[currentQ];
     question.innerHTML = "<p>"+ ques.question +"</p>";
     qImg.innerHTML = "<img src="+ ques.imgSrc +">";
+    qImg1.innerHTML = "<img src="+ ques.imgSrc1 +">";
     option1.innerHTML = ques.option1;
     option1.innerHTML = ques.option2;
 }
