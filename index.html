@@ -14,7 +14,7 @@
     <header>
         <h1>The Pub Quiz</h1>
         <div id="hideMsg">
-            <img src="assets/images/guinness_pints.jpg" alt="People holding up five pints of Guinness">
+            <img src="assets/images/irish_pub.jpg" alt="People holding up five pints of Guinness">
         </div>
     </header>
     <main>
@@ -31,26 +31,22 @@
         </div>
         <div id="playButton"><button onclick="startGame()">Play now</button></div>
             <div id="showGame">
-                
+                <div id="question"></div>
                 <div class="questions_box">
                     <div class="option-left">
                         <div class="card_left">
-                            <div id= "qImg"><img src="" alt="Avatar" style="width:100%"></div>
+                            <div id= "qImg"></div>
                             <div class="container">
-                                <div class="answer_options">
-                                    <button data-type="option1">Option1</button>
-                                </div>
+                                <div id="option1" onclick="checkAnswer('option1')"></div>
                             </div>
                         </div>
                     </div>
 
                         <div class="option-right">
                             <div class="card">
-                                <div id= "qImg1"><img src="" alt="Avatar" style="width:100%"></div>
+                                <div id= "qImg1"></div>
                                 <div class="container">
-                                    <div class="answer_options">
-                                        <button data-type="option2">Option2</button>
-                                    </div>
+                                    <div class="choice" id="option2" onclick="checkAnswer('option2')"></div>
                                 </div>
                             </div>
                         </div>

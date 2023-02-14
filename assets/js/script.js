@@ -20,13 +20,7 @@ function gameRules() {
     document.getElementById("demo2").innerHTML = "No looking at others answers";
     document.getElementById("playButton").style.display="block";
   }
-/*------------------------------------*/
-function startGame() {
-    document.getElementById("showGame").style.display="block";
-    document.getElementById("divMsg").style.display="none";
-    document.getElementById("imgOption").style.display="block";
-    document.getElementById("divMsg").style.display="none";
-  }
+
 /*------------------------------------*/
 let imgTomH = 66;
 let imgLiamN = 70;
@@ -39,18 +33,19 @@ let imgSylvs = 76;
 let imgLeoV = 44;
 let imgMaryL = 53;
 /*------------------------------------*/
-const question = document.getElementById("question");
-const qImg = document.getElementById("qImg");
-const qImg1 = document.getElementById("qImg1");
-const option1 = document.getElementById("option1");
-const option2  = document.getElementById("option2");
+let question = document.getElementById("question");
+let qImg = document.getElementById("qImg");
+let qImg1 = document.getElementById("qImg1");
+let option1 = document.getElementById("option1");
+let option2  = document.getElementById("option2");
 let questions = [
     {
         question : "Who is the oldest?",
-        imgSrc : "img/html.png",
-        option1 : "Correct",
-        option2 : "Wrong",
-        correct : "option1"
+        imgSrc : "assets/images/tom_hanks.jpg",
+        imgSrc : "assets/images/liam_Neeson.jpg",
+        option1 : "Tom Hanks",
+        option2 : "Liam Neeson",
+        correct : "option2"
     },{
         question : "Who is the oldest?",
         imgSrc : "img/html.png",
@@ -65,17 +60,43 @@ let questions = [
         correct : "option1"
     }
 ];
+/*------------------------------------*/
+let currentQ = 0;
+let lastQ = questions.length -1;
 
+function makeQuestion(){
+    let ques = questions[currentQ];
+    question.innerHTML = "<p>"+ ques.question +"</p>";
+    qImg.innerHTML = "<img src="+ ques.imgSrc +">";
+    option1.innerHTML = ques.option1;
+    option1.innerHTML = ques.option2;
+}
 
 
 /*------------------------------------*/
 
 
-function myQuestions() {
-    var x = document.createElement("IMG");
-    x.setAttribute("src", "assets/images/liam_Neeson.jpg");
-    x.setAttribute("width", "304");
-    x.setAttribute("height", "228");
-    x.setAttribute("alt", "The Pulpit Rock");
-    document.body.appendChild(x);
+
+
+
+/*------------------------------------*/
+function startGame() {
+    document.getElementById("showGame").style.display="block";
+    document.getElementById("divMsg").style.display="none";
+    makeQuestion();
+    
   }
+
+
+
+
+
+
+//function myQuestions() {
+   // var x = document.createElement("IMG");
+   // x.setAttribute("src", "assets/images/liam_Neeson.jpg");
+   // x.setAttribute("width", "304");
+   // x.setAttribute("height", "228");
+   // x.setAttribute("alt", "The Pulpit Rock");
+    //document.body.appendChild(x);
+ // }
