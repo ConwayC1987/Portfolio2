@@ -65,6 +65,22 @@ img {
   border-radius: 9px 9px 0 0;
 }
 
+#qImg img{
+  width: 200px;
+  height:auto;
+}
+
+#qImg1 img{
+  width: 200px;
+  height:auto;
+}
+
+.options:hover{
+  border : 2px solid rgb(245, 244, 244);
+  font-weight: bold;
+  background-color: whitesmoke;
+}
+
 .container {
   padding: 2px 16px;
 }
